@@ -1,7 +1,7 @@
 
 import React from 'react';
-import ProductCard from './ProductCard';
-import { Product, Category } from '../types';
+import ProductCard from './ProductCard.tsx';
+import { Product, Category } from '../types.ts';
 
 interface CategorySectionProps {
   category: Category;
@@ -14,7 +14,7 @@ const CategorySection: React.FC<CategorySectionProps> = ({ category, products })
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-2xl mb-10 md:mb-16">
           <h2 className="text-2xl md:text-4xl font-serif font-bold mb-4 flex items-center gap-4">
-            <span className="w-8 md:w-12 h-[1px] bg-[#D4AF37] hidden xs:block"></span>
+            <span className="w-8 md:w-12 h-[1px] bg-[#D4AF37] hidden sm:block"></span>
             {category.title}
           </h2>
           <p className="text-sm md:text-base text-gray-500 leading-relaxed font-light">

@@ -1,5 +1,5 @@
 
-import { Product } from './types';
+import { Product } from './types.ts';
 
 export const ALL_PRODUCTS: Product[] = [
   // --- DÉCORATION ---
@@ -139,7 +139,7 @@ export const ALL_PRODUCTS: Product[] = [
     category: 'decor'
   },
 
-  // --- LINGE DE MAISON (Update: Bathrobes & Towels) ---
+  // --- LINGE DE MAISON ---
   {
     id: 'lin-001',
     name: 'Peignoir en coton gaufré',

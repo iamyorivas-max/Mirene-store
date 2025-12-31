@@ -1,8 +1,8 @@
 
 import React from 'react';
 import { MessageCircle } from 'lucide-react';
-import { Product } from '../types';
-import { WHATSAPP_NUMBER } from '../constants';
+import { Product } from '../types.ts';
+import { WHATSAPP_NUMBER } from '../constants.ts';
 
 interface ProductCardProps {
   product: Product;
@@ -45,19 +45,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           </span>
           <button 
             onClick={handleWhatsAppOrder}
-            className="hidden xs:flex bg-[#1A1A1A] text-white p-2 md:p-3 rounded-full hover:bg-[#D4AF37] transition-all duration-300 group-hover:shadow-lg transform active:scale-95"
+            className="flex bg-[#1A1A1A] text-white p-2 md:p-3 rounded-full hover:bg-[#D4AF37] transition-all duration-300 group-hover:shadow-lg transform active:scale-95"
             aria-label="Commander sur WhatsApp"
           >
             <MessageCircle size={16} className="md:w-5 md:h-5" />
           </button>
         </div>
-        
-        <button 
-          onClick={handleWhatsAppOrder}
-          className="mt-3 xs:hidden w-full border border-[#1A1A1A] text-[#1A1A1A] py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-[#1A1A1A] hover:text-white transition-all"
-        >
-          Commander
-        </button>
       </div>
     </div>
   );

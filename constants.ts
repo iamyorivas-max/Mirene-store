@@ -1,6 +1,6 @@
 
-import { Category } from './types';
-import { ALL_PRODUCTS } from './products';
+import { Category } from './types.ts';
+import { ALL_PRODUCTS } from './products.ts';
 
 export const WHATSAPP_NUMBER = "212600000000"; 
 export const BRAND_NAME = "Maison Éclat";

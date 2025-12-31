@@ -1,19 +1,15 @@
 
-import React, { useState, useEffect } from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import CategorySection from './components/CategorySection';
-import Reassurance from './components/Reassurance';
-import Footer from './components/Footer';
-import { CATEGORIES, PRODUCTS, WHATSAPP_NUMBER } from './constants';
-import { MessageCircle, Filter } from 'lucide-react';
+import React, { useState } from 'react';
+import Header from './components/Header.tsx';
+import Hero from './components/Hero.tsx';
+import CategorySection from './components/CategorySection.tsx';
+import Reassurance from './components/Reassurance.tsx';
+import Footer from './components/Footer.tsx';
+import { CATEGORIES, PRODUCTS, WHATSAPP_NUMBER } from './constants.ts';
+import { MessageCircle } from 'lucide-react';
 
 const App: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>('all');
-
-  const filteredProducts = activeCategory === 'all' 
-    ? PRODUCTS 
-    : PRODUCTS.filter(p => p.category === activeCategory);
 
   return (
     <div className="relative min-h-screen">
